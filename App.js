@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Button from './src/assets/components/button/button';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+
+      <Button text="Acessar" />
+
+
+      <Text>Open up App.js to start !</Text>
       <StatusBar style="auto" />
     </View>
   );
