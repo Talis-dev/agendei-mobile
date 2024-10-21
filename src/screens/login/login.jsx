@@ -1,8 +1,7 @@
 import { Image, Text,TextInput,TouchableOpacity,View } from "react-native";
-import logo from "../../assets/logo.png"
+import icon from "../../constants/icon"
 import Button from "../../components/button/button"
 import { styles } from "./login_style";
-import { Icon } from 'react-native-elements';
 import ButtonView from "../../components/buttonView/buttonViewIcon";
 import React, { useState } from "react";
 
@@ -17,7 +16,7 @@ export default function LoginPage() {
 
 
      <View style={styles.containerLogo}>
-     <Image source={logo} style={styles.logo} />
+     <Image source={icon.logo} style={styles.logo} />
      </View> 
 
      <View>
@@ -34,7 +33,7 @@ export default function LoginPage() {
 
        
 
-     <Button text="Acessar"/>  
+     <Button theme={"primary"} size={15} text="Acessar"/>  
     
      </View>
 

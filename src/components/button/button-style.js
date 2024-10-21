@@ -6,14 +6,21 @@ import { COLORS, FONT_SIZE } from "../../constants/theme";
 export const styles = StyleSheet.create ({
 
 btn : {  
-    backgroundColor: COLORS.blue,
     alignItems: 'center',
-  //  justifyContent: 'center',
-    padding:15,
     borderRadius:8,
-   // margin:10,
-   // paddingHorizontal:'30%',
 
+},
+default: {
+  backgroundColor: COLORS.gray1,
+},
+primary: {
+  backgroundColor: COLORS.blue,
+},
+danger: {
+  backgroundColor: COLORS.red,
+},
+ghost: {
+  backgroundColor: COLORS.gray3,
 },
 
 text : {
