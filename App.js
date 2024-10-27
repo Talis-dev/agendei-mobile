@@ -1,20 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
-import LoginPage from './src/screens/login/login';
-import AccountPage from './src/screens/account/account';
-import Home from './src/screens/Home/Home';
-import Calendar from './src/screens/Calendar/Calendar';
-import Profile from './src/screens/Profile/Profile';
-
-
+import Routes from './src/routes/routes.js';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <View style={{flex:1,}}>
-
-<Profile/>
-
-      <StatusBar style="auto" />
+    <NavigationContainer>
+          <View style={{flex:1,}}>
+       <Routes/>
+    <StatusBar style="auto" />
     </View>
+    </NavigationContainer>
+
   );
 }

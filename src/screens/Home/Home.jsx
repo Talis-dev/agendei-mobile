@@ -2,9 +2,15 @@ import { FlatList, Text, View } from "react-native";
 import { styles } from "./Home_style";
 import { doctors } from "../../constants/data";
 import Doctor from "../../components/doctors/doctors";
-import icon from "../../constants/icon";
 
-export default function Home(){
+
+export default function Home(props){
+
+    function ClickDoctor(id_doctor,name,specialty,icon){
+    props.navigation.navigate("services")
+
+    }
+
     return(
         <View style={styles.container}>
 
@@ -15,9 +21,11 @@ export default function Home(){
            showsVerticalScrollIndicator={false} 
            renderItem={({item})=>{ 
 
-            return <Doctor name={item.name} 
-            icon={item.icon == "F" ? icon.female : icon.male} 
-            specialty= {item.specialty}/>
+            return <Doctor id_doctor={item.id_doctor}
+            name={item.name} 
+            icon={item.icon} // M ou F
+            specialty= {item.specialty}
+            onPress={ClickDoctor}/>
           
           }}/>
 

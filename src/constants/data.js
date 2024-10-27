@@ -111,12 +111,12 @@ export const doctors_services = [
     {
         id_service: 1,
         description: "Consulta Médica",
-        price: 499.99
+        price: 399.99
     },
     {
         id_service: 2,
         description: "Drenagem Linfática",
-        price: 650
+        price: 650.95
     },
     {
         id_service: 3,
@@ -126,6 +126,11 @@ export const doctors_services = [
     {
         id_service: 4,
         description: "Mamoplastia",
-        price: 1700
-    }
+        price: 2850
+    },
+    {
+        id_service: 5,
+        description: "Radiográfia",
+        price: 700.99
+    },
 ];

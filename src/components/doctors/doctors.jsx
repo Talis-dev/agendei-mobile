@@ -1,13 +1,13 @@
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./doctors_style";
-
+import icon from "../../constants/icon";
 
 export default function Doctor(props){
 
     return(
         <View>
-       <TouchableOpacity style={styles.card}>
-        <Image source={props.icon} 
+       <TouchableOpacity style={styles.card} onPress={() => props.onPress(props.id_doctor,props.name,props.specialty,props.icon)}>
+        <Image source={props.icon == "M" ? icon.male : icon.female} 
         style={styles.icon}/>
 
         <View>

@@ -1,7 +1,7 @@
 import { Alert, Text, TouchableOpacity } from "react-native";
 import { styles } from "./button-style";
 
-function Button({size=15,theme,text}){
+function Button({size=15,theme,text,onPress}){
 
     return <>
     <TouchableOpacity style={[styles.btn,{ padding: size },
@@ -11,7 +11,8 @@ function Button({size=15,theme,text}){
     styles.default // Estilo padrão, caso nenhum tema corresponda
     ]} 
 
-    onPress={() => Alert.alert('Pressed ')} >
+    onPress={onPress}
+     >
   <Text style={styles.text} >
         {text}
         </Text>

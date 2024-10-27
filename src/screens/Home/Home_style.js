@@ -8,8 +8,8 @@ container : {
   backgroundColor: COLORS.white,
   flex:1,
   justifyContent:"space-between",
-  paddingTop:50,
-  padding:8,
+  padding:12,
+  
   //alignItems:"center",
 },
 text :{
@@ -17,7 +17,7 @@ text :{
     fontWeight:"bold",
     color:COLORS.gray2,
     marginTop:5,
-    marginLeft:"18%",
+
 },
 
 

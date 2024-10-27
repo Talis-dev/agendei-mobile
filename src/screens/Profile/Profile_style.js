@@ -7,8 +7,9 @@ export const styles = StyleSheet.create ({
 
 card :{
     flex:1,
+    backgroundColor:COLORS.white,
     //flexDirection:"center",
-   marginTop:50,
+   //marginTop:5,
    // borderRadius:5,
    borderTopWidth:1,
    borderColor:COLORS.gray4,
