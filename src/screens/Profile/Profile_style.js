@@ -38,5 +38,10 @@ cardDate :{
     fontSize:FONT_SIZE.lg,
     color:COLORS.gray1,
     marginTop:8,
-    },         
+    },    
+    btSair:{
+padding:40,
+
+    }    
+    
 })

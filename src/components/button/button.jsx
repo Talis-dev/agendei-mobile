@@ -1,7 +1,8 @@
-import { Alert, Text, TouchableOpacity } from "react-native";
+import { Icon } from 'react-native-elements';
+import { Text, TouchableOpacity } from "react-native";
 import { styles } from "./button-style";
 
-function Button({size=15,theme,text,onPress}){
+function Button({size=15,theme,text,onPress,disabled}){
 
     return <>
     <TouchableOpacity style={[styles.btn,{ padding: size },
@@ -13,9 +14,21 @@ function Button({size=15,theme,text,onPress}){
 
     onPress={onPress}
      >
-  <Text style={styles.text} >
-        {text}
-        </Text>
+       {disabled ? (
+                      <Text  >
+                       <Icon
+  name="cloud-sync"
+  type="material"
+  color="#fff"
+  size={24}
+/> 
+                      </Text>
+                    ) : (
+                      <Text style={styles.text} >
+                      {text}
+                      </Text>
+                    )}
+
   </TouchableOpacity>
     </>
 }

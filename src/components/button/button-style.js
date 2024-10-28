@@ -24,7 +24,6 @@ ghost: {
 },
 
 text : {
-    
     color: COLORS.white,
     fontSize:FONT_SIZE.lg,   
 }

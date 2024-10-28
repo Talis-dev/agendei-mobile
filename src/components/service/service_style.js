@@ -15,7 +15,7 @@ card :{
    // borderBottomWidth:1,
     padding:10,
     paddingBottom:5,
-    paddingTop:15,
+    paddingTop:20,
     
 },
 cardText :{

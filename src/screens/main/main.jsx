@@ -27,6 +27,7 @@ export default function Main(){
             }} />
         },
         tabBarShowLabel:false,
+        unmountOnBlur:true,
         tabBarIcon: ({focused}) => {
             return <Image source={icon.home} style={{
                 height:30,
@@ -48,6 +49,7 @@ export default function Main(){
             }} />
         },
         tabBarShowLabel:false,
+        unmountOnBlur:true,
         tabBarIcon: ({focused}) => {
             return <Image source={icon.calendar} style={{
                 height:30,
@@ -69,6 +71,7 @@ export default function Main(){
             }} />
         },
         tabBarShowLabel:false,
+        unmountOnBlur:true,
         tabBarIcon: ({focused}) => {
             return <Image source={icon.profile} style={{
                 height:30,

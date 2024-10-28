@@ -16,12 +16,12 @@ container : {
 },
 banner : {
   backgroundColor: COLORS.blue,
-  flex:1,
+ // flex:1,
   flexDirection:"column",
- justifyContent:"center",
+// justifyContent:"center",
  alignItems:"center",
-  padding:30,
-  paddingTop:55,
+  padding:10,
+  paddingTop:10,
   
 },
 

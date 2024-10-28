@@ -26,8 +26,13 @@ export default function RoutesPrivate(){
         
     }}/>
 
-   <Stack.Screen name='Schedule' component={Schedule}
-    options={{headerShown:false}}/>  
+   <Stack.Screen name='schedule' component={Schedule}
+    options={{headerShown:true,
+        headerTitle:"Fazer uma Reserva",
+        headerTitleAlign:"center",
+        headerShadowVisible:false,
+        headerTintColor:COLORS.blue,
+             }}/>  
 
 </Stack.Navigator>
 
